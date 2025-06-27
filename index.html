@@ -1,136 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhanu Raj Sahu - Filmmaker Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="menu-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#myworks">My works</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="hero" id="home">
-    <div class="hero-circle"></div>
-    <img src="BhanuPortfolio/assets/images/bhanu-hero.png" alt="Bhanu Raj Sahu" class="hero-image" onerror="this.src='https://via.placeholder.com/350x450?text=Image+Not+Found'; console.log('Hero image failed to load, using placeholder.');" />
-    <div class="hero-content">
-      <div class="name-section">
-        <h1 class="name-bold">Bhanu</h1>
-        <h2 class="name-italic">Raj Sahu</h2>
-      </div>
-      <div class="role-section">
-        <h1 class="role-bold">Filmmaker</h1>
-        <p class="roles-list">cinematographer</p>
-        <p class="roles-list">video-editor</p>
-        <p class="roles-list">Director</p>
-      </div>
-    </div>
-    <div class="arrow-down">↳</div>
-  </section>
-
-<section class="about" id="aboutme">
-  <h2 class="about-heading">About Me</h2>
-  <div class="about-content">
-    <img src="BhanuPortfolio/assets/images/about me photo.png" alt="Bhanu Raj Sahu" class="about-image" onerror="this.src='https://via.placeholder.com/300x400?text=Image+Not+Found'; console.log('About image failed to load, using placeholder.');" />
-    <div class="about-text">
-      <h3 class="about-subheading">A young filmmaker driven by emotion and visual storytelling — learning with every frame, growing with every story.</h3>
-      <p class="about-bio">My name is Bhanu Raj Sahu, and I'm currently studying Television Programme and Filmmaking at RUDN University in Moscow. Originally from India, I bring a diverse cultural perspective to my work. I create films that aim not only to entertain but also to inspire viewers to question, reflect, and think deeply about the world around them.</p>
-      <a href="read-more.html" class="read-more">Read More →</a>
-    </div>
-  </div>
-</section>
-
-
-</section><section class="works" id="myworks">
-  <h2 class="works-title">MY WORKS</h2>
-  <div class="works-grid">
-    <!-- Short Films -->
-    <a href="works/short-films/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/insat-film-post-0.1.png');"></div>
-      <div class="work-info">
-        <h3>Short Films</h3>
-        <p>3 Projects</p>
-      </div>
-    </a>
+    <h1>Welcome to My Site! 🌟</h1>
+    <p>This is my homepage.</p>
     
-    <!-- Creative Videos -->
-    <a href="works/creative-videos/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/insta-film-post-5.png');"></div>
-      <div class="work-info">
-        <h3>Creative Videos</h3>
-        <p>3 Projects</p>
-      </div>
-    </a>
+    <!-- Image Example -->
+    <img src="images/your-image.jpg" alt="My Photo" width="400">
     
-    <!-- Monologues -->
-    <a href="works/monologues/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/monologue-thumb.jpg');"></div>
-      <div class="work-info">
-        <h3>Monologues</h3>
-        <p>3 Performances</p>
-      </div>
-    </a>
+    <!-- Video Example (upload MP4 to /videos folder) -->
+    <video width="500" controls>
+        <source src="videos/your-video.mp4" type="video/mp4">
+        Your browser doesn’t support videos.
+    </video>
     
-    <!-- Documentary -->
-    <a href="works/documentary/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/doc-thumb.jpg');"></div>
-      <div class="work-info">
-        <h3>Documentary</h3>
-        <p>2 Films</p>
-      </div>
-    </a>
-    
-    <!-- Photographs -->
-    <a href="works/photographs/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/photo-thumb.jpg');"></div>
-      <div class="work-info">
-        <h3>Photographs</h3>
-        <p>14 Works</p>
-      </div>
-    </a>
-    
-    <!-- Posters -->
-    <a href="works/posters/" class="work-card">
-      <div class="work-image" style="background-image: url('assets/images/poster-thumb.jpg');"></div>
-      <div class="work-info">
-        <h3>Posters</h3>
-        <p>3 Designs</p>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- Detail View Modal -->
-<div id="work-detail" class="work-detail">
-  <div class="detail-container">
-    <button class="detail-close" onclick="hideWorkDetail()">×</button>
-    <div class="detail-media" id="detail-media"></div>
-    <div class="detail-info">
-      <h3 class="detail-category" id="detail-category"></h3>
-      <h2 class="detail-title" id="detail-title"></h2>
-      <p class="detail-description" id="detail-description"></p>
-    </div>
-  </div>
-</div>
-
-  <footer id="contacts">
-    <p>© 2025 Bhanu Raj Sahu</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Link to About Page -->
+    <p><a href="about.html">About Me</a></p>
 </body>
 </html>
